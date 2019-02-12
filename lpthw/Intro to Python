@@ -1,0 +1,46 @@
+OBJECT ORIENTED PROGRAMMING (OOP)
+EVERYTHING IN PYTHON IS AN OBJECT
+WHAT ARE OBJECTS?
+An object is a data abstraction that captures:
+    the representation of something i.e. what makes up something e.g. we might represent a car with number of wheels, number of doors it has, it's length, its height
+    the ways in which you interact with or manipulate that object once you have created it. e.g. in the case of a car, drive it, hoot it, change its color etc.
+    e.g. [1,2,3,4] has object (data) type "list"
+
+    1234 3.14159 "Hello" [1, 5, 7, 11, 13]
+    {"CA": "California", "MA": "Massachusetts"}
+   each of these is an object, So, everything in Python is an object. Lists are objects. 42 is an object. Modules are objects. Functions are objects.
+   every object has:
+      • a type (belongs to a classification)
+      • an internal data representation
+      • a set of procedures for interaction with the object
+
+      how are lists represented internally (behind the scenes how does python see lists)? linked list of cells: essentially a chain
+L = 1 | ->  ----> 2 | -> ----> 3 | -> ----> 4 | ->
+python sees a list as made of two things:
+      (1) the value at a specific index, index 0 has value 1, because it is the first element in the list
+      (2) ->, the pointer, which is going to tell python where is the memory location in the computer where you can access the element in index 0
+     and then you have another pointer that takes you to the location in memory where the index 2 is located. And in index 2 you have the value and then the next pointer, and so on and so on. So this is how Python internally represents a list. OK?
+How are lists manipulated? can index into a list, add two lists together, append to a list, etc.
+
+ An object is an instance of a type (class)
+  • 1234 is an instance of an int
+  • "hello" is an instance of a string
+
+A class packs a set of data together with a set of functions operating on the data. The goal is to achieve more modular code by grouping data and functions into manageable (often small) units.
+Python class is a blueprint for creating an object.
+Object oriented programming is a method of programming that attempts to model some process or thing in the world as a class or object. Conceptually, you can think of a class or object as something that has data and can perform operations on that data. With object oriented programming, the goal is to encapsulate your code into logical groupings using classes so that you can reason about your code at a higher level. Before we get ahead of ourselves, though, let's define some terminology and see an example:
+Class - A blueprint for objects. Classes can contain methods and properties. We commonly use classes to reduce code duplication.
+Instance - objects that are made from a class by calling the class. Instances share a similar structure because they all come from the same blueprint (i.e. class).
+If you are not sure what class a value falls into, Python has a function called "type" which can tell you:
+  • >>> type("Hello, World!")
+        <class 'str'>
+  • >>> type(17)
+        <class 'int'>
+
+  • An object refers to any entity in a python program. • Every object has an associated type, which determines the properties of the object. • Python defines six types of built-in objects:
+Number 10 or 2.71828 String “hello” List [1, 17, 44] or [“pickle”, “apple”, “scallop”] Tuple (4, 5) or (“homework”, “exam”) Dictionary {“food” : “something you eat”, “lobster” : “an edible arthropod”} File more later…
+• It is also possible to define your own types, comprised of combinations of the six base types.
+Literals and variables
+• A variable is simply a name for an object. • For example, we can assign the name “pi” to the Number object 3.14159, as follows:
+>>> pi = 3.14159 >>> print pi 3.14159
+• When we write out the object directly, it is a literal, as opposed to when we refer to it by its variable name.

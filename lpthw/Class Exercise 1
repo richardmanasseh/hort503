@@ -1,0 +1,19 @@
+
+def inValues():
+    errorcounter = 0
+    s = 0
+
+    while errorcounter < 2: # errorcounter = [0, 1] ...
+        digit = input('Please enter a number: ')
+        if digit == '0':
+            # return sum of numbers
+            return s
+        try:
+            # try and summarize input
+            s += float(digit)
+        except:
+            print('Error. Please re-enter the value.')
+            errorcounter += 1
+
+    print("Too many errors.")
+    # possibly return indicative value (None?)
