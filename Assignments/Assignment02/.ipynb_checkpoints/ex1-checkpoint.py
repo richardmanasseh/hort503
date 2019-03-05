@@ -1,4 +1,3 @@
-
 #syntax for print function = print(), and outputs to your console window whatever you say you want to print out.
 print(2)
 print(100)
